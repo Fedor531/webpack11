@@ -1,0 +1,32 @@
+{
+  "name": "pr11",
+  "homepage": "https://github.com/Fedor531/webpack11",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo Федя запустил скрипт",
+    "build": "rimraf dist && webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open --watch",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Fedor",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
+    "gh-pages": "^2.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^0.11.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.4.1"
+  }
+}
